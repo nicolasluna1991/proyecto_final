@@ -1,0 +1,147 @@
+* { margin: 0; padding: 0; }
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+#wrapper {
+    display: grid;
+    grid-template-areas:
+    "miheader miheader"
+    "intro intro"
+    "iconos iconos"
+    "productos promos"
+    "mifooter mifooter"
+    ;
+    grid-template-columns: auto 250px;
+    grid-template-rows: 80px auto 150px auto 60px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    width: 100%;
+    height: 100vh;
+}
+/*INICIO DEL HEADER*/
+header{
+    grid-area: miheader ;
+    background-color:  #D4A373;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    margin: 50px;
+}
+header nav{
+    margin: 50px;
+}
+/*BARRA DE NAVEGACION*/
+header nav ul li{
+    display: inline-block ;
+    margin: 0 5px;
+    list-style-type: none;
+    text-decoration: none;
+}
+header nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: red;
+}
+body div h1{
+    color: white;
+    font-size: 30px;
+    margin: 50 px;
+}
+/*INICIO DEL INTRO*/
+section#intro{
+    grid-area: intro;
+    background-color: #f4f3ee;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+section#intro article h1{
+    color: black;
+}
+/*INICIO DE COMENTARIOS*/
+section#iconos{
+    grid-area: iconos;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section#iconos article{
+    height: 150px;
+    border-radius: px;
+    align-items: center;
+    text-align: center;
+}
+section#iconos article h2{
+    color: #6c757d;
+}
+section#iconos article h4{
+    color: #adb5bd ;
+}
+section#iconos article img{
+    width: auto;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+}
+/*INICIO DE PRODUCTOS*/
+section#productos{
+    grid-area: productos;
+    background-color:#e9edc9;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;   
+    align-items: center; 
+}
+section#productos article .mueble_article{
+    width: auto;
+    height: 250px;
+    align-items: center;
+    text-align: center;
+}
+section#productos article{
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    flex-wrap: wrap; 
+}
+/*INICIO DEL ASIDE*/
+aside#promos{
+    grid-area: promos;
+    background-color: #faedcd;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+}
+aside#promos article img{
+    width: 200px;
+    height: auto;
+}
+/*INICIO DE FOOTER*/
+footer{
+    grid-area: mifooter;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
