@@ -1,0 +1,193 @@
+* { margin: 0; padding: 0; }
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+#wrapper {
+    display: grid;
+    grid-template-areas:
+    "miheader"
+    "intro"
+    "empresa"
+    "mifooter"
+    ;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto auto 60px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (max-width: 768px) {
+    #wrapper{
+        display: grid;;
+        grid-template-areas:
+        "miheader"
+        "intro"
+        "empresa"
+        "mifooter"
+        ;
+    grid-template-columns: auto;
+    grid-template-rows: 95px auto auto 60px;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    width: 100%;
+    height: 100vh;
+    }
+    #intro {
+        flex-wrap: wrap;
+    }
+}
+/*INICIO DEL HEADER*/
+header{
+    grid-area: miheader ;
+    background-color:  #D4A373;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img{
+    margin: 50px;
+}
+header nav{
+    margin: 50px;
+}
+/*BARRA DE NAVEGACION*/
+header nav ul li{
+    display: inline-block ;
+    margin: 0 5px;
+    list-style-type: none;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+header nav ul li a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    color: red;
+}
+body div header h1{
+    color: white;
+    font-size: 30px;
+    margin: 50 px;
+}
+/*INICIO INTRO*/
+#intro{
+    grid-area: intro;
+    background-color: #f4f3ee;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+#intro article h1{
+    font-size: 40px;
+    margin: 10px;
+}
+#intro article p{
+    font-size: 25px;
+}
+/*FIN INTRO*/
+/*INICIO EMPRESA*/
+#empresa{
+    grid-area: empresa;
+    background-color: #ffffff; /*#f4f3ee */
+    justify-content:space-around ;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Fira Sans', sans-serif;
+}
+#empresa div{
+    width: 350px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+} 
+/*FIN DE EMPRESA.HTML*/
+/*INICIO DE PAGE ENVIOS.HTML*/
+#entregas{
+    grid-area: intro;
+    background-color: #14213d;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#entregas article h1{
+    font-size: 45px;
+    margin: 10px;
+    color: #ffffff;
+}
+#entregas article p{
+    font-size: 30px;
+    color: #ffffff;
+}
+.ubicacion{
+    grid-area: empresa;
+    background-color: #14213d;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+#mapa {
+    align-items: center;
+    text-align: center;
+    border: #D4A373;
+}
+/*FIN DE ENVIOS.HTML*/
+/*INICIO DE CONTACTO.HTML*/
+#formulario{
+    grid-area: intro;
+    display: flex;
+    justify-content:space-around ;
+    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+}
+#formulario form fieldset label{
+    margin: 5px;
+}#formulario form fieldset input{
+    margin: 5px;
+}
+#redes article{
+    grid-area: empresa;
+    height: 150px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.red_logo{
+    margin: 10px;
+    width: auto;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+/*FIN DE CONTACTO.HTML*/
+/*INICIO DE FOOTER*/
+footer{
+    grid-area: mifooter;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
