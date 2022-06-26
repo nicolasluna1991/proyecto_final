@@ -155,7 +155,7 @@ section#productos article{
     margin: 15px;
     padding: 10px;
 }
-
+/*INICIO DE LA ANIMACION*/
 .contariner_card{
     width: 1200px;
     height: auto;
@@ -240,7 +240,7 @@ section#productos article{
     box-shadow: 1px 1px 30px 0px #e76f51;
 
 }
-
+/*FIN DE LA ANIMACION*/
 /*INICIO DEL ASIDE*/
 aside#promos{
     grid-area: promos;
