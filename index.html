@@ -1,168 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deco Moon</title>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-        <a href="index.html"><img width="auto" height="70px" src="./assets/imagenes/Logo.png" alt=""></a>
-        <h1>Home & Deco</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/empresa.html">Empresa</a></li>
-                <li><a href="./pages/envios.html">Envios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Deco Moon</title>
+  </head>
+  <body>
+    
+    <!--====ENCABEZADO======  -->
+    <header data-aos="fade-down" class="container-fluid bg-secondary d-flex justify-content-center ">
+        <p class="text-light mb-0 p-2 fs-6">Todo para tu hogar</p>
     </header>
-        <section id="intro">
-            <article>
-                <h1>Diseño único que transmite simplicidad y elegancia.</h1>
-                <p>Moon House es una tienda especializada en el diseño y 
-                    fabricación de muebles, lámparas y objetos para la casa que 
-                    incorporan la madera como elemento principal.</p>
-            </article>
-            <article>
-             <img src="assets/imagenes/Sala villa serena on Behance_files/33333.png">
-            </article>    
-        </section>
-        <section id="iconos">
-            <article>
-               <img src="assets/iconos/camion_reparto.png">
-                <h2>Envios</h2>
-                <h4>a todo el país</h4>
-            </article>
-            <article>
-                <img src="assets/iconos/descuento.png">
-                 <h2>Descuentos</h2>
-                 <h4>en efectivo</h4>
-             </article>
-             <article>
-                <img src="assets/iconos/tarjeta_credito.png">
-                 <h2>Cuotas sin interés</h2>
-                 <h4>pagando con tarjeta</h4>
-             </article>
-             <article>
-                <img src="assets/iconos/compra_online.png">
-                 <h2>Comprá on-line</h2>
-                 <h4>fácil y seguro</h4>
-             </article>
-        </section>
-        <section id="productos">
-            <article>
-            <div class="container_card">
-                <div class="card_father">
-                    <div class="card">
-                        <div class="card_front" style="background-image: url(assets/imagenes/mesas_sillas1.png) " >
-                        <div class="body_card_front">
-                            <h1>Mesa Eames</h1>
-                        </div>
-                        <div class="card_back">
-                            <div class="body_card_back">
-                                <h1>Mesa Eames</h1>
-                                <p>Esta versión estilo Nórdico ofrece una combinación
-                                     en tapa blanca o negra (laqueada mate) y patas en tonos claros,
-                                      para generar una visual única. Un diseño ideal para
-                                       tu cocina o living comedor</p>
-                                <input type="button" value="Leer Más">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+    <nav data-aos="fade-down" class="navbar navbar-expand-lg navbar-light bg-warning bg-gradient p-3" id="menu_nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span class="fw-bold" >Deco Moon</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/empresa.html">Empresa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/envios.html">Envios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--====CARRUSEL DE IMAGENES======  -->
+
+      <div data-aos="fade-down" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/imagenes/carousel_1.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/imagenes/carousel_2.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/imagenes/carousel_3.png" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--=====INTRO=====-->
+
+      <section data-aos="zoom-in" class=" w-50 mx-auto text-center pt-5" id="intro">
+        <h1 class="p-3 fs-2 boderder-top border-3">Diseños únicos que transmiten simplicidad y elegancia.</h1>
+        <p>Moon House es una tienda especializada en el diseño y fabricación de muebles, lámparas y objetos para la casa que incorporan la madera como elemento principal.</p>
+      </section>
+
+      <!--=====PRODUCTOS=====-->
+      <section class="container-fluid mb-5">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 m-2">
+            <div class="col">
+              <div data-aos="zoom-in" class="card shadow">
+                <img src="./assets/imagenes/mesas_sillas1.png" class="card-img-top" alt="...">
+                <div class="card-body shadow">
+                  <h5 data-aos="flip-right" class="card-title">Mesa Eames</h5>
+                  <p data-aos="flip-right" class="card-text">Esta versión estilo Nórdico ofrece una combinación
+                    en tapa blanca o negra (laqueada mate) y patas en tonos claros,
+                     para generar una visual única. Un diseño ideal para
+                      tu cocina o living comedor</div>
+              </div>
             </div>
-        </article>
-            <article>
-                <div class="container_card">
-                    <div class="card_father">
-                        <div class="card">
-                            <div class="card_front" style="background-image: url(assets/imagenes/sillon_1.PNG) " >
-                            <div class="body_card_front">
-                                <h1>Sillon Malaga</h1>
-                            </div>
-                            <div class="card_back">
-                                <div class="body_card_back">
-                                    <h1>Sillon Malaga</h1>
-                                    <p>El modelo Malaga es un sofá-cama con chaiselongue
-                                         con el diseño más actual y con la máxima calidad.
-                                          El modelo Malaga es un sofá fabricado con un 
-                                          armazón de madera de pino macizo y acabado en sus
-                                           laterales con tablero de partículas que le confieren
-                                            sus formas modernas y actuales que posee,</p>
-                                    <input type="button" value="Leer Más">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col">
+              <div data-aos="zoom-in" class="card shadow">
+                <img src="./assets/imagenes/sillon_1.PNG" class="card-img-top" alt="...">
+                <div class="card-body shadow">
+                  <h5 data-aos="flip-right" class="card-title">Sillon Malaga</h5>
+                  <p data-aos="flip-right" class="card-text">El modelo Malaga es un sofá fabricado con un 
+                     armazón de madera de pino macizo y acabado en sus
+                      laterales con tablero de partículas que le confieren
+                       sus formas modernas y actuales que posee,</div>
+              </div>
+            </div>
+            <div class="col">
+              <div data-aos="zoom-in" class="card shadow">
+                <img src="./assets/imagenes/mesa_exterior.PNG" class="card-img-top" alt="...">
+                <div class="card-body shadow">
+                  <h5 data-aos="flip-right" class="card-title">Mesa Exterior</h5>
+                  <p data-aos="flip-right" class="card-text">Mesa Plegable de madera Eucaliptus con terminacion
+                    impregnante para madera, contiene una mano
+                    de Cetol que la hace apta para quinchos y galerías</div>
+              </div>
+            </div>
+          </div>
+
+      </section>
+
+      <footer>
+        <div data-aos="fade-up" class="container-fluid">
+
+          <div class="row p-3 pb-1 bg-dark">
+
+            <div class="col xs-12 col-md-6 col-lg-3 mt-3">
+            <p class="h3 text-light">Avenida 1234</p>
+            <p class="text-secondary"> Capital Federal</p>
+            <a href="#"></a>
+          </div>
+            <div class="col xs-12 col-md-6 col-lg-3 mt-3">
+            <p class="h3 mb-3 text-light">Productos</p>
+             <div class="mb-2">
+           </div>
+             <div>
+            <a class="text-secondary text-decoration-none" href="#">Mesas</a>
+             </div>
+              <div>
+             <a class="text-secondary text-decoration-none" href="#">Sillas</a>
+             </div>
+             <div>
+             <a class="text-secondary text-decoration-none" href="#">Sillones</a>
+             </div>
+             <div>
+             <a class="text-secondary text-decoration-none" href="#">Muebles</a>
+             </div>
+             </div>
+             <div class="col xs-12 col-md-6 col-lg-3 mt-3">
+              <p class="h3 mb-3 text-light">Redes</p>
+              <div>
+                <a class="text-secondary text-decoration-none" href="#">Instagram
+                </a>
                 </div>
-            </article>
-            <article>
-                <div class="container_card">
-                    <div class="card_father">
-                        <div class="card">
-                            <div class="card_front" style="background-image: url(assets/imagenes/sillon_matero.PNG) " >
-                            <div class="body_card_front">
-                                <h1>Silla Matero</h1>
-                            </div>
-                            <div class="card_back">
-                                <div class="body_card_back">
-                                    <h1>Silla Matera</h1>
-                                    <p>Las sillas materas son ideales para
-                                         ese rincón del hogar donde disfrutás
-                                          de las mejores tardes de mates con amigos.
-                                           Con un diseño simple que mantiene el concepto
-                                            de líneas rectas, es un opción excelente para
-                                             darle un aire rustico a tus espacios.</p>
-                                    <input type="button" value="Leer Más">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <div class="container_card">
-                    <div class="card_father">
-                        <div class="card">
-                            <div class="card_front" style="background-image: url(assets/imagenes/mesa_ratona.PNG) " >
-                            <div class="body_card_front">
-                                <h1>Mesa Ratona</h1>
-                            </div>
-                            <div class="card_back">
-                                <div class="body_card_back">
-                                    <h1>Mesa Ratona</h1>
-                                    <p>Un producto con diseño funcional y mayor
-                                        comodidad para el uso diario. Realizada con
-                                    melamina de 18mm</p>
-                                    <input type="button" value="Leer Más">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <aside id="promos">
-        <article>
-            <h2>¡Envios Gratis!</h2>
-            <h4>Zona Oeste y CABA</h4>
-            <h6>EN PRODUCTOS DE ENTREGA INMEDIATA</h6>  
-           </article>
-        </aside>
-        <footer>
-            <img class="logo_footer" src="./assets/imagenes/Logo.png">
-            Copyright &copy; Moon Home & Deco - 2022
-        </footer>
-    </div>
-</body>
+                <div>
+                  <a class="text-secondary text-decoration-none" href="#">Facebook</a>
+                  </div>
+              </div>
+              <div class="col xs-12 col-md-6 col-lg-3 mt-3">
+              <p class="h3 mb-3 text-light">Contacto</p>
+              <p class="text-secondary text-decoration-none">11-2233-4455</p>
+             </div>
+
+             <div class="col-xs-12 pt-3">
+                <p class="text-white text-center">Copyright - All rights reserved © 2022</p>
+
+             </div>
+
+           </div>
+
+        </div>
+      </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
