@@ -32,11 +32,11 @@ body{
 
 .container-form{
     position:relative;
-    width: 100%;
-    max-width: 1100px;
+    width: 50%;
+    max-width: 50%;
     margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
+    grid-template-columns: row;
     grid-gap: 50px;
     margin-top: 90px;
 }
@@ -47,7 +47,7 @@ body{
 .container-form p{
     font-size: 17px;
     line-height: 1.6;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 .container-form a{
     font-size: 17px;
@@ -68,12 +68,10 @@ body{
     font-size: 16px;
     border: 1px solid #dbdbdb;
     margin-bottom: 20px;
-    border-radius: 3px;
+    border-radius: 10px;
     outline: 0px;
 }
 .container-form form textarea{
-    max-width: 530px;
-    min-width: 530px;
     min-height: 140px;
     max-height: 150px;
 }
@@ -91,4 +89,3 @@ body{
 .container-form .btn-enviar:hover{
     background: #fb8500;
 }
-
