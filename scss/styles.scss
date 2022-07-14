@@ -1,4 +1,10 @@
+@use 'mixins';
+@use 'reset';
+
+//Variables
 $lato: 'Lato', sans-serif;
+$color-principal: #fb8500;
+$color-secundario: #dbdbdb;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');

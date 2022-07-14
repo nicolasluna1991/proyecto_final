@@ -1,0 +1,14 @@
+//mixin para flebox con justify modificable
+@mixin creador-flexbox($justify){
+    display: flex;
+    text-align: center;
+    justify-content: $justify;
+}
+//mixin para flebox con justify modificable
+@mixin arreglar-imagen {
+        background:{
+            size: cover;
+            repeat: no-repeat;
+            position: center;
+        }
+}
