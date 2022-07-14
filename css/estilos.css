@@ -30,8 +30,10 @@ body{
 }
 #fondo-body{
     background: url("../assets/imagenes/fondo-body.jpg");
-    height: auto;
-    width: auto;   
+    background-size: cover;
+    background-position: ;
+    height: 100%;
+    width: 100%;   
 }
 #fondo-envios{
     background-color: #dbdbdb;
