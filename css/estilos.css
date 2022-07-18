@@ -31,7 +31,6 @@ body{
 #fondo-body{
     background: url("../assets/imagenes/fondo-body.jpg");
     background-size: cover;
-    background-position: ;
     height: 100%;
     width: 100%;   
 }
@@ -99,4 +98,39 @@ body{
 }
 .container-form .btn-enviar:hover{
     background: #fb8500;
+}
+
+/*mofificacion empresa.html*/
+.empresa-card-left{
+    background-color: #dbdbdb;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+    margin: 10px;
+}
+
+.empresa-card-right{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.empresa-descripcion{
+    display: row;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+.__img{
+    margin: 30px;
+    width: 150px;
+    height: auto;
+}
+.__img-competencias{
+    height: 300px;
+
 }
