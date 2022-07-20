@@ -103,6 +103,7 @@ body{
 /*mofificacion empresa.html*/
 .empresa-card-left{
     background-color: #dbdbdb;
+    border-radius: 15px;
     display:flex;
     justify-content:center;
     text-align: center;
