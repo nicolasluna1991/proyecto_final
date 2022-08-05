@@ -176,7 +176,7 @@ body {
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   grid-column: span 2;
   height: 283px;
-  transition: 0.5s;
+  transition: 1s;
 }
 .galeria_exagonal div:first-of-type {
   grid-column: 2/span 2;
@@ -195,7 +195,7 @@ body {
 }
 @media screen and (min-width: 505px) and (max-width: 682px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(odd) {
@@ -204,7 +204,7 @@ body {
 }
 @media screen and (min-width: 683px) and (max-width: 857px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(3n + 1) {
@@ -213,7 +213,7 @@ body {
 }
 @media screen and (min-width: 858px) and (max-width: 1032px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(4n + 1) {
@@ -222,7 +222,7 @@ body {
 }
 @media screen and (min-width: 1033px) and (max-width: 1208px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(5n + 1) {
@@ -231,7 +231,7 @@ body {
 }
 @media screen and (min-width: 1209px) and (max-width: 1383px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(6n + 1) {
@@ -240,7 +240,7 @@ body {
 }
 @media screen and (min-width: 1384px) and (max-width: 1558px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(7n + 1) {
@@ -249,7 +249,7 @@ body {
 }
 @media screen and (min-width: 1559px) and (max-width: 1734px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(8n + 1) {
@@ -258,7 +258,7 @@ body {
 }
 @media screen and (min-width: 1735px) and (max-width: 1909px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(9n + 1) {
@@ -267,7 +267,7 @@ body {
 }
 @media screen and (min-width: 1910px) and (max-width: 2259px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
   .galeria_exagonal div:nth-of-type(10n + 1) {
@@ -276,10 +276,10 @@ body {
 }
 @media screen and (min-width: 2260px) and (max-width: 3000px) {
   .galeria_exagonal {
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
     margin-top: 4rem;
   }
-  .galeria_exagonal div:nth-of-type(12n + 1) {
+  .galeria_exagonal div:nth-of-type(11n + 1) {
     grid-column: 2/span 2;
   }
 }
