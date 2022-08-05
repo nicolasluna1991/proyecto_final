@@ -2,6 +2,8 @@
 @use 'mixin';
 @use 'mapas';
 @use 'formulario';
+@use 'galeriaexagonal';
+@use 'mediaquerys';
 
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
@@ -37,7 +39,6 @@ body{
 #fondo-body{
     background: url("../assets/imagenes/fondo-body.jpg");
     background-size: cover;
-    background-position: ;
     height: 100%;
     width: 100%;   
 }

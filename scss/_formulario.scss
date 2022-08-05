@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+html,body{
+    width: 100%;
+    height: 100vh;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+@media (max-width:768px) {
+    #intro{
+        width:90% !important
+    }
+    #mapa iframe{
+        width: 320px;
+        height: 270px;
+    }
+    .container-form{
+        text-align: center;
+    }
+    .texto-articulo{
+        text-align: center;
+    }
+    }
+.logotipo{
+    height: 40px;
+    padding: 5px;
+}
+#fondo-body{
+    background: url("../assets/imagenes/fondo-body.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;   
+}
+#fondo-envios{
+    background-color: #dbdbdb;
+    height: auto;
+    width: auto;   
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 .container-form{
     position:relative;
     width: 50%;
@@ -7,25 +47,24 @@
     grid-template-columns: row;
     grid-gap: 50px;
     margin-top: 90px;
-
-    & h2{
-        margin-bottom: 15px;
-        font-size: 35px    
-    }
-    & p{
-        font-size: 17px;
-        line-height: 1.6;
-        margin-bottom: 31px;
-    }
-    & a{
-        font-size: 17px;
-        display: inline-block;
-        text-decoration: none;
-        width: 100%;
-        margin-bottom: 15px;
-        color: black;
-        font-weight: 700;
-    }
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 31px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
 }
 .container-form a i{
     color: orange;
@@ -59,14 +98,38 @@
     background: #fb8500;
 }
 
-.quienes__somos{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+/*mofificacion empresa.html*/
+.empresa-card-left{
+    background-color: #dbdbdb;
+    border-radius: 15px;
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+    margin: 10px;
 }
-#fondo-body{
-    background: url("../assets/imagenes/fondo-body.jpg");
-    background-size: cover;
-    height: 100vh;
-    width: 100%;   
+
+.empresa-card-right{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.empresa-descripcion{
+    display: row;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+.__img{
+    margin: 30px;
+    width: 150px;
+    height: auto;
+}
+.__img-competencias{
+    height: 300px;
+
 }

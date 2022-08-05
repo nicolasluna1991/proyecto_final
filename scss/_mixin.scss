@@ -6,9 +6,7 @@
 }
 //mixin para flebox con justify modificable
 @mixin arreglar-imagen {
-        background:{
             size: cover;
             repeat: no-repeat;
             position: center;
         }
-}
