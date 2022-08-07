@@ -10,10 +10,13 @@
       <meta name="author" content="Deco Moon">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../scss/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Deco Moon - Empresa</title>
     <link rel="icon" href="../assets/iconos/favicon-empresa.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
   </head>
   <body>
     <!--====ENCABEZADO======  -->
@@ -48,73 +51,79 @@
           </div>
         </div>
       </nav>
-      <div>
-        <h1 data-aos="fade-left" class="container-fluid d-flex justify-content-center">Somos Moon Home & Deco</h1>
-        <div>
-        <h6 data-aos="fade-left" class="container-fluid d-flex justify-content-center text-center">
-          Somos una empresa que comienza su actividad en 2015 con un importante crecimiento en el rubro
-            del diseño, fabricación y comercializacion de muebles para el hogar.
-            Mantuvimos desde nuestros inicios conceptos firmes que lograron el éxito actual,
-            donde básicamente se desarrolló en la implementacion de objetivos claros, que a
-            través de la planificación estratégica con procesos altamente definidos fueron
-            las raices que en la actualidad continúan y continuaran impulsando el éxito
-            de la empresa</h6>
-          </div>
-        </div>
+      <!-- info sobre la empresa -->
+        <div class="deco_moon_txt">
+          <p class="titulo_decomoon_txt">
+            Somos Deco Moon...
+          </p>
+          <p class="descripcion_decomoon_txt">
+            Somos una empresa que comienza su actividad en 2015 con un importante crecimiento en 
+            el rubro del diseño, fabricación y comercializacion de muebles para el hogar. Mantuvimos 
+            desde nuestros inicios conceptos firmes que lograron el éxito actual, donde básicamente se 
+            desarrolló en la implementacion de objetivos claros, que a través de la planificación 
+            estratégica con procesos altamente definidos fueron las raices que en la actualidad continúan
+             y continuaran impulsando el éxito de la empresa
+          </p>
 
-        <div data-aos="fade-left" class="empresa-card-left">
-          <img class="__img" src="../assets/imagenes/mision.png" alt="mision">
-          <div class="empresa-descripcion">
-          <h4 data-aos="fade-left" class="card-title ">Mision</h4>
-          <p data-aos="fade-left" class="card-text">Ser una marca reconocida nacionalmente
-            a través de nuestros diseños de muebles
-            funcionales e innovadores</p>
+        </div>
+      <!-- comienzo del lado izquierdo -->
+      <div class="contenedor_empresa">
+        <div class="card_empresa_izq">
+          <div class="empresa_img">
+            <img class="__img" src="../assets/imagenes/mision.png" alt="mision">
+          </div>
+          <div class="empresa_txt">
+            <p>Ser una marca reconocida nacionalmente
+              a través de nuestros diseños de muebles
+              funcionales e innovadores</p>
           </div>
         </div>
-
-        <div data-aos="fade-left" class="empresa-card-right">
-          <div class="empresa-descripcion">
-          <h4 data-aos="fade-left" class="card-title ">Visión</h4>
-          <p data-aos="fade-left" class="card-text">Ofrecer muebles con diseños funcionales,
-            exclusivos y modernos, con tecnología de
-            primera, procesos estandarizados y personal
-            altamente comprometido, garantizando la calidad
-            de nuestros productos, la entrega oportuna
-            y la plena satisfacción de nuestros clientes</p>
+        <!-- fin del lado izquierdo -->
+        <!-- comienzo del lado derecho -->
+        <div class="card_empresa_der">
+          <div class="empresa_img">
+            <img class="__img" src="../assets/imagenes/vision.png" alt="vision">
           </div>
-          <img class="__img" src="../assets/imagenes/vision.png" alt="vision">
-        </div>
-
-        <div data-aos="fade-left" class="empresa-card-left">
-          <img class="__img" src="../assets/imagenes/valores.png" alt="valores">
-          <div class="empresa-descripcion">
-          <h4 data-aos="fade-left" class="card-title ">Valores</h4>
-          <p data-aos="fade-left" class="card-text">Solidos principios éticos</p>
-          <p data-aos="fade-left">Promovemos la innovacion en todos los ámbitos</p>
-          <p data-aos="fade-left">Somos productivos en las tareas</p>
-          <p data-aos="fade-left">Reconocemos el logro</p>
-          <p data-aos="fade-left">Apostamos a la mejora continua</p>
+          <div class="empresa_txt">
+            <p>Ofrecer muebles con diseños funcionales,
+              exclusivos y modernos, garantizando la calidad
+              de nuestros productos, la entrega oportuna
+              y la plena satisfacción de nuestros clientes</p>
           </div>
         </div>
-
-        <div data-aos="fade-left" class="empresa-card-right">
-          <div class="empresa-descripcion">
-          <h4 data-aos="fade-left" class="card-title ">Competencias del personal</h4>
-          <p data-aos="fade-left" class="card-text">Deteccion y análisis de oportunidades</p>
-          <p data-aos="fade-left">Cuidado en la ejecución productiva y el
-            detalle en las actividades</p>
-          <p data-aos="fade-left">Adaptabilidada a las nuevas propuestas
-            de diseño de muebles</p>
-          <p data-aos="fade-left">Orienteción al aprendeizaje, al
-            conocimiento y a la innovación</p>
-          <p data-aos="fade-left">Capacidad de asumir riesgos y
-            enfrentar responsabilidades</p>
-          </div>
-          <img class="__img-competencias" src="../assets/imagenes/competencias.png" alt="competencias">
-        </div>
+        <!-- fin del lado derecho -->
       </div>
+        <!-- comienzo del lado izquierdo -->
+              <div class="contenedor_empresa">
+                <div class="card_empresa_izq">
+                  <div class="empresa_img">
+                    <img class="__img" src="../assets/imagenes/valores.png" alt="valores">
+                  </div>
+                    <div class="empresa_txt">
+                      <p>Solidos principios éticos - Promovemos la innovacion en todos los ámbitos - 
+                      Somos productivos en las tareas - Somos productivos en las tareas - 
+                      Reconocemos el logro - Apostamos a la mejora continua</p>
+                  </div>
+              </div>
+               <!-- fin del lado izquierdo -->
+              <!-- comienzo del lado derecho -->
+              <div class="card_empresa_der">
+                <div class="empresa_img">
+                  <img class="__img-competencias" src="../assets/imagenes/competencias.png" alt="competencias">
+                </div>
+                <div class="empresa_txt">
+                  <p>Competencias del personal - Deteccion y análisis de oportunidades - 
+                    Cuidado en la ejecución productiva y el detalle en las actividades - 
+                    Adaptabilidada a las nuevas propuestas de diseño de muebles - 
+                    Orienteción al aprendeizaje, al conocimiento y a la innovación - 
+                    Capacidad de asumir riesgos y enfrentar responsabilidades</p>
+                </div>
+              </div>
+              <!-- fin del lado derecho -->
+            </div>
+      <!--====INICIO DEL FOOTER======-->
         <footer>
-            <div data-aos="fade-up" class="container-fluid">
+            <div data-aos="fade-up" class="container-fluid mt-5">
               <div class="row p-3 pb-1 bg-dark">
                 <div class="col xs-12 col-md-6 col-lg-3 mt-3">
                 <p class="h3 text-light">Avenida 1234</p>

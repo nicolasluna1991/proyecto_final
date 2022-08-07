@@ -1,0 +1,99 @@
+// ESTILOS PARA EMPRESA.HTML //
+
+.contenedor_empresa{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.card_empresa_izq{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    width: auto;
+    height: auto;
+    background-color: #fefae0;
+    border-radius: 25px;
+}
+
+.card_empresa_der{
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: #e9ecef;
+    border-radius: 25px;
+}
+
+.empresa_txt{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5%;
+    font-size: 1.2rem;
+}
+
+
+.__img {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 30px;
+    width: 100px;
+    height: auto;
+}
+
+.__img-competencias{
+    padding: 5%;
+    height: 150px;
+}
+
+.titulo_decomoon_txt{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.descripcion_decomoon_txt{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+@media (max-width:920px){
+    .contenedor_empresa{
+        flex-direction:column;
+    }
+    .card_empresa_der{
+        flex-direction:column;
+    }
+    .card_empresa_izq{
+        flex-direction:column;
+    }
+    .__img{
+        height: 125px;
+        width: auto;
+    }
+}
+
